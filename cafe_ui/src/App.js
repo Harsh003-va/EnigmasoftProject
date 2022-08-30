@@ -1,27 +1,28 @@
 import React from "react";
 import "./App.css";
+import image from "./image"
 
 function App() {
-  return (
-    <div className="App"><h1>Login</h1>
+  return <image/>(
 
-    <div className="form">
-<<<<<<< Updated upstream
-      <label>Movie Name:</label>
-     <input type="text"name="movieeName"/>
-     <label>Review:</label>
-     <input type="text"name="review" />
-=======
-      <label>Email:</label>
-     <input type="text"name="email"/>
-     <label>Password:</label>
-     <input type="text"name="password" />
+    <div class="login-page">
+    <div class="form">
+        <form class="register-form">
+            <input type="text" placeholder="User name"/>
+            <input type="text" placeholder="Password"/>
+            <button>Create</button>
+            <p class="message">Already Registered? <a href="App.css">Login</a></p>
+       </form>
     
->>>>>>> Stashed changes
-    <button>Submit</button>
+       <form class="form">
+            <input type="text" placeholder="User name"/>
+            <input type="password" placeholder="Password"/>
+            <button>Login</button>
+            <p class="message">Not Registered? <a href="App.css">Register</a></p>
+            </form>
     </div>
     </div>
-  );
+  )
 }
 
 export default App;
