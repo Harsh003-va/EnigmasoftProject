@@ -10,7 +10,6 @@ function App() {
      <input type="text"name="movieeName"/>
      <label>Review:</label>
      <input type="text"name="review" />
-    
     <button>Submit</button>
     </div>
     </div>
