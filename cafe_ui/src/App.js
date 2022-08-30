@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
-import image from "./image"
+
 
 function App() {
-  return <image/>(
+  return (
 
     <div class="login-page">
     <div class="form">
