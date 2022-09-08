@@ -5,6 +5,7 @@ import "./App.css";
 function App() {
   return (
 
+
     <div class="login-page">
     <div class="form">
         <form class="register-form">
