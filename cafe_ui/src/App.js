@@ -288,8 +288,6 @@ function App() {
     <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet" />  
     <div class="overlay" id="divOne">
       <div class="wrapper">
-          
-           
                 <div class="login-page" id="login-page">
 
                 <div class="form">
