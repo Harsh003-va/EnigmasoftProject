@@ -1,11 +1,18 @@
 import React from "react";
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.css'
 
 function App() {
   return (
    
    <body>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"></link>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"  ></link>
+          
+    
+        
         <header class="header">
 
           <section class="flex">
@@ -15,7 +22,7 @@ function App() {
               <a href="#home">Home</a>
             
               <a href="#popular">Menu</a>
-              <a href="#login-page">Login</a>
+              <a href="#divOne">Login</a>
               <a href="#register" class="button">Book A Table</a>
             </nav>
 
@@ -257,13 +264,6 @@ function App() {
           <h3>LOGIN </h3>
           <div class="form">
             <a href="#home" class="formbar"><i class="fas fa-mug-hot">Enjoy By having Our Delicious Coffee</i> </a>
-            <form action="" class="register-form">
-              <input type="text" placeholder="User name" />
-              <input type="text" placeholder="Password" />
-              <button>Create</button>
-              <p class="message">Already Registered?<a href="App.css">Login</a></p>
-            </form>
-
             <form class="form">
               <input type="text" placeholder="User name" />
               <input type="password" placeholder="Password" />
@@ -277,23 +277,36 @@ function App() {
      
       
     <section class="register" id="register">
+      
         <div class="heading">
             <img src="images/heading-img.png" alt=""></img>
             <h3>Reservation</h3>
         </div>
-       <div class="row">
-          <div class="image">
-              <img src="images/contact-img.svg" alt=""></img>
-          </div>
-          <form action="" method="post">
-              <h3>book a table</h3>
-              <input type="text" name="name" required class="box" maxlength="20" placeholder="enter your name" />
-              <input type="email" name="emailid" required class="box" maxlength="30" placeholder="enter your Email id" />
-              <input type="tel" name="phone_number" required class="box" maxlength="20" placeholder="enter your phone number" />
-              <input type="submit" name="send" value="submit" class="btn" />
-          </form>
 
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet" />  
+    <div class="overlay" id="divOne">
+      <div class="wrapper">
+          
+           
+                <div class="login-page" id="login-page">
+
+                <div class="form">
+                <a class="close" href="/">&times;</a>
+                  <a href="#home" class="formbar"><i class="fas fa-mug-hot">Enjoy By having Our Delicious Coffee</i> </a>
+                  <form class="form">
+                    <input type="text" placeholder="User name" />
+                    <input type="password" placeholder="Password" />
+                    <button>Login</button>
+                    <p class="message">Not Registered?<a href="App.css">Register</a></p>
+                  </form>
+                </div>
+             </div>
+       
+          </div>
       </div>
+
 
      </section>
      <br></br>
@@ -310,18 +323,6 @@ function App() {
             <a href="#home"><i class="fab fa-linkedin"></i></a>
             <a href="#home"><i class="fab fa-pinterest"></i></a>
           </div>
-
-          <div class="links">
-            <a href="#home">home</a>
-            <a href="#about">about</a>
-            <a href="#popular">menu</a>
-            <a href="#login-page">Login</a>
-            <a href="#Register">Register</a>
-
-
-          </div>
-        
-
         </section>
  </body>
 
