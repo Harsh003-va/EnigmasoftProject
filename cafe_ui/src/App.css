@@ -1,7 +1,6 @@
 .App {
     text-align: center;
   }
-  
   @import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
   @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
   :root{
@@ -47,7 +46,7 @@
    }
   
    .header{
-      position: sticky;
+    
       top:0; left: 0; right:0;
       background-color: var(--white);
       box-shadow: var(--box-shadow);
@@ -58,7 +57,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      position: relative;
+      position: sticky;
       padding:1.5rem 2rem;
    }
    
@@ -163,6 +162,23 @@
      opacity: 0;
      animation-delay: 1400ms;
   }
+   
+  .btnn{
+   color:var(--white);
+   font-size: 1.8rem;
+   padding:1rem 3rem;
+   background-color: var(--main-color);
+   cursor: pointer;
+   display: inline-block;
+   margin-top: 1rem;
+   text-decoration: none;
+   border: 2rem;
+  }
+  .btnn:hover{
+   background-color:#5d3419;
+   color: white;
+   border: 2rem;
+  }
   
   .home-bg{
       background:linear-gradient(80deg, var(--black), transparent 60%), url(./HOME.jpg) no-repeat;
@@ -198,25 +214,8 @@
       margin-left: 5rem;
       font-style: italic;
    }
-  
-   .btn{
-      display: inline-block;
-      margin-top: 1rem;
-      background-color: var(--main-color);
-      cursor: pointer;
-      color:var(--white);
-      font-size: 1.8rem;
-      padding:1rem 3rem;
-   }
    
-   .btn:hover{
-      background-color:#512a10;
-      color: white;
-      border: 2rem;
-  
-      
-   }
-   
+
    .about{
       padding-top: 8rem;
       display: flex;
@@ -226,7 +225,7 @@
    }
    
    .about .image{
-      flex:1 1 40rem;
+      flex:1 1 50rem;
       padding-left: 10rem;
    }
    
@@ -244,17 +243,14 @@
       }
   }
    
-  
-   
    .about .content{
-      flex:1 1 40rem;
+      flex:1 1 50rem;
       text-align:left;
       font-size: large;
       color:var(--black);
-      padding-right: 5rem;
+      padding-right: 2rem;
       
    }
-  
   
    .about .content h3{
       font-size: 4.5rem;
@@ -277,11 +273,6 @@
       text-transform: uppercase;
       padding-bottom: 3.5rem;
       font-size: 4rem;
-  }
-  
-  .heading span{
-      color:var(--main-color);
-      text-transform: uppercase;
   }
   
   .heading{
@@ -340,7 +331,7 @@
     }
     
     .about .icons-container .icons i {
-      font-size: 4rem;
+      font-size: 3rem;
       margin-bottom: 1.5rem;
       color: #512a10;
     }
@@ -350,7 +341,9 @@
       text-transform: capitalize;
       color: #222;
     }
-  
+    .facility  .heading{
+      margin-top:1rem;
+    }
     .menu {
       background: #eee;
       color: #666;
@@ -381,7 +374,7 @@
     
     .menu .box-container .box img {
       height: 15rem;
-      margin-bottom: 2rem;
+      margin-bottom: 5rem;
     }
     
     .menu .box-container .box h3 {
@@ -539,10 +532,13 @@
    gap:2rem;
 }
 
-
    .footer{
+      left: 0;
+      bottom: 0;
+      width: 100%;
       background:var(--black);
       text-align: center;
+      
   }
   
   .footer .share{
