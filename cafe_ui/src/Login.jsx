@@ -8,7 +8,7 @@ const Login = () => {
 <html lang="en">
   <head>
     <title>Login | By Code Info</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" ></link>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"

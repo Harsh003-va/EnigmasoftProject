@@ -12,11 +12,8 @@ const Home = () => {
               <p>A Cup of Coffee can complete your day......</p>
               <a href="/About"  id="homebtn" class="btnn">about us</a>
             </div>
-          </section>
-          
+          </section>     
         </div>
-
-      
     </div>
   )
 }

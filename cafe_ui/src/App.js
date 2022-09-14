@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Link,Route,Routes } from "react-router-dom";
+import {Route,Routes } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css'
 import Home from "./Home";
 import Navbar from "./Navbar";
@@ -12,10 +12,10 @@ import SignUp from "./SignUp";
 
 
 const App = () => {
-  return (
+  return(
   <html>
     <><></><Navbar />
-       
+           
         <body>
         <></><Routes>
             <Route path="/Navbar" element={<Navbar />} />
@@ -25,16 +25,12 @@ const App = () => {
             <Route path="/Login" element={<Login />} />
             <Route path="/SignUp" element={<SignUp />} />
         </Routes>
-
+        
 
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"></link>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
           <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"></link>
-
-
-
-          
 
         
           <br></br>

@@ -1,8 +1,10 @@
-.App {
-    text-align: center;
-  }
   @import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
   @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+
+  .App {
+   text-align: center;
+    }
+
   :root{
      --main-color:#be9c79;
      --black:#333;
@@ -534,6 +536,7 @@
 
    .footer{
       left: 0;
+      right: 0;
       bottom: 0;
       width: 100%;
       background:var(--black);

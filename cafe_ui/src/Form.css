@@ -1,7 +1,6 @@
 body {
     font-family: "Roboto", sans-serif;
     background-color: #e9b37e;
-
   }
   
   .signup-box {
@@ -10,8 +9,6 @@ body {
     margin: auto;
     background-color: white;
     border-radius: 3rem;
-
-  
   }
   
   .login-box {
@@ -54,6 +51,7 @@ body {
     border-radius: 6px;
     outline: none;
   }
+  
   input[type="button"] {
     width: 320px;
     height: 35px;
@@ -63,6 +61,7 @@ body {
     color: white;
     font-size: 18px;
   }
+
   p {
     text-align: center;
     padding-top: 20px;

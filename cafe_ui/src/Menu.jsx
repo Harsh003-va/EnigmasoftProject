@@ -5,12 +5,9 @@ const Menu = () => {
     <div>
       <section class="popular" id="popular">
           <div class="heading">
-            <img src="\images\heading-img.png" alt=""></img>
+            <img src="\images\heading-img.png" alt="img"></img>
             <h3> Menu</h3>
-
-
             <div class="box-container">
-
               <div class="box">
                 <span class="price"> Rs 120/-  </span>
                 <img src="\images\images.jpg" alt=""></img>
