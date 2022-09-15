@@ -2,14 +2,15 @@ import React, { useState } from "react";
 import Axios from 'axios';
 import "./Form.css";
 
+
 const SignUp = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("0");
   
   const SignUp = () => {
-    console.log(name);
-    Axios.post('http://localhost3001/Signup', {
+    console.log(name + email + password);
+    Axios.post('http://localhost:3002/create', {
       name: name,
       email: email,
       password: password,
@@ -17,7 +18,7 @@ const SignUp = () => {
       console.log("success");
     });
   };
- 
+
 
   return (
     <div>
