@@ -17,9 +17,7 @@ const SignUp = () => {
       console.log("success");
     });
   };
-  const displayInfo=() =>{
-    console.log(username + email + phone + password);
-  };
+ 
 
   return (
     <div>
