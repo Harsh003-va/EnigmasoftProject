@@ -1,7 +1,26 @@
-import React from 'react'
+import React, { useState } from "react";
+import Axios from 'axios';
 import "./Form.css";
 
 const SignUp = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("0");
+  
+  const SignUp = () => {
+    console.log(name);
+    Axios.post('http://localhost3001/Signup', {
+      name: name,
+      email: email,
+      password: password,
+    }).then(() => {
+      console.log("success");
+    });
+  };
+  const displayInfo=() =>{
+    console.log(username + email + phone + password);
+  };
+
   return (
     <div>
    
@@ -19,12 +38,18 @@ const SignUp = () => {
       <h4>It's free and only takes a minute</h4>
       <form>
         <label>Name</label>
-        <input type="text" placeholder="" />
+        <input
+          type="text" onChange={(event) => {setName(event.target.value);}}
+        />
         <label>Email</label>
-        <input type="email" placeholder="" />
+        <input 
+          type="email" onChange={(event) => {setEmail(event.target.value);}}
+        />
         <label>Password</label>
-        <input type="password" placeholder="" />
-        <input type="button" value="Submit" />
+        <input
+          type="password" onChange={(event) => {setPassword(event.target.value);}}
+        />
+        <button onClick={SignUp}> Submit </button>
       </form>
       <p class="para-2">
         Already have an account? <a href="/Login">Login here</a>
