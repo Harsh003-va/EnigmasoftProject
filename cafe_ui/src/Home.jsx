@@ -3,7 +3,7 @@ import "./App.css";
 
 const Home = () => {
   return (
-    <div>
+    <div className='home'>
         <div class="home-bg">
           <section class="home" id="home">
             <div class="content">
