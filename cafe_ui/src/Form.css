@@ -5,18 +5,20 @@ body {
   
   .signup-box {
     width: 360px;
-    height: 620px;
+    height: 520px;
     margin: auto;
     background-color: white;
     border-radius: 3rem;
+    margin-top: 20px;
   }
   
   .login-box {
-    margin-top: 5rem;
+    padding-bottom: 50px;
     width: 360px;
     height: 280px;
     margin: auto;
     padding: 0;
+    margin-top:200px;
     border-radius: 1rem;
     box-shadow: 1px 1px 1px 1px black;
     background-color: white;
