@@ -1,14 +1,13 @@
 import React from 'react'
 import "./Form.css";
 
-
 const SignUp = () => {
   return (
     <div>
    
 <html lang="en">
   <head>
-    <title>Sign Up | By Code Info</title>
+    <title>Sign Up Page</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
@@ -30,7 +29,11 @@ const SignUp = () => {
       <p class="para-2">
         Already have an account? <a href="/Login">Login here</a>
       </p>
+      <br></br>
     </div>
+
+
+    
    
   </body>
 </html>

@@ -11,7 +11,7 @@ const Navbar = () => {
               <a href="/Home">Home</a>
               <a href="/Menu">Menu</a>
               <a href="/Login">Login</a>
-              <a href="#register" class="button">Book A Table</a>
+              <a href="#login-page" class="button">Book A Table</a>
             </nav>
             <div id="menu-btn" class="fas fa-bars"></div>
 

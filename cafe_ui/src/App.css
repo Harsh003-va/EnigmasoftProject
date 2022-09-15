@@ -1,6 +1,15 @@
   @import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
   @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+    
+  html{
+     font-size: 62.5%;
+     height: 100%;
+  }
 
+  body{
+  
+   min-height: 100%;
+  }
   .App {
    text-align: center;
     }
@@ -14,13 +23,14 @@
      --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
   }
   
-  *{
+  *{ 
      font-family: 'Nunito', sans-serif;
      margin:0; padding:0;
      box-sizing: border-box;
      outline: none; border:none;
      text-decoration: none;
      text-transform: capitalize;
+    
   }
   
   *::selection{
@@ -181,6 +191,10 @@
    color: white;
    border: 2rem;
   }
+
+ body .home-bg{
+    min-height: 100vh;
+  }
   
   .home-bg{
       background:linear-gradient(80deg, var(--black), transparent 60%), url(./HOME.jpg) no-repeat;
@@ -269,7 +283,7 @@
       font-size: 1.5rem;
    }
    .heading{
-      margin-top: 10rem;
+      margin-top: 5rem;
       text-align: center;
       color:#fff;
       text-transform: uppercase;
@@ -515,12 +529,13 @@
      margin: 10px;
   }
   .formbar{
+     margin-top: 5rem;
      text-align: center;
      font-size: 1.3rem;
      letter-spacing: 1px;
      color: #512a10;
      font-family: 'Merienda One', cursive;
-     margin: 5px;
+    
   }
 
    .register input{
@@ -535,9 +550,8 @@
 }
 
    .footer{
-      left: 0;
-      right: 0;
-      bottom: 0;
+      margin-top: auto;
+      top: 100%;
       width: 100%;
       background:var(--black);
       text-align: center;
@@ -669,49 +683,4 @@
    
    }
     
-   .overlay {
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: rgba(0, 0, 0, 0.8);
-      transition: opacity 500ms;
-      visibility: hidden;
-      opacity: 0;
-   }
-   .overlay:target {
-      visibility: visible;
-      opacity: 1;
-   }
-   .wrapper {
-      margin: 70px auto;
-      padding: 20px;
-      border-radius: 5px;
-      width: 30%;
-      position: relative;
-      transition: all 5s ease-in-out;
-      margin-top: 15rem;
-   }
-   .wrapper h2 {
-      margin-top: 0;
-      color: #333;
-   }
-   .wrapper .close {
-      position: absolute;
-      top: 20px;
-      right: 30px;
-      transition: all 200ms;
-      font-size: 30px;
-      font-weight: bold;
-      text-decoration: none;
-      color: #333;
-   }
-   .wrapper .close:hover {
-      color: #512a10;
-   }
-   .wrapper .content {
-      max-height: 30%;
-      overflow: auto;   
-   }
-   
+  
