@@ -8,6 +8,7 @@ import Menu from "./Menu";
 import About from "./About";
 import Login from "./Login";
 import SignUp from "./SignUp";
+import Footer from "./Footer";
 
 
 
@@ -26,6 +27,7 @@ const App = () => {
             <Route path="/SignUp" element={<SignUp />} />
         </Routes>
         
+        
 
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"></link>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,18 +38,7 @@ const App = () => {
           <br></br>
           <br></br>
           <br></br>
-
-
-          <section class="footer">
-
-            <div class="share">
-              <a href="#home"><i class="fab fa-facebook-f"></i></a>
-              <a href="#home"><i class="fab fa-twitter"></i></a>
-              <a href="#home"><i class="fab fa-instagram"></i></a>
-              <a href="#home"><i class="fab fa-linkedin"></i></a>
-              <a href="#home"><i class="fab fa-pinterest"></i></a>
-            </div>
-          </section>
+          <Footer />
   </body></>
 
   </html>
