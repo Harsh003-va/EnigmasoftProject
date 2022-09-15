@@ -30,6 +30,30 @@ db.query('INSERT INTO signup(name ,email, password) VALUES (?,?,?) ',[name, emai
 )
 });
 
+app.post('/login',(req, res) => {
+    console.log(req.body);
+
+    const email = req.body.email;
+    const password = req.body.password;
+    
+ 
+ db.query(
+    "SELECT * FROM signup WHERE email = ? AND password = ?",
+    [email, password],
+    (err, result) => {
+     if(err){
+        res.send({err: err})
+     }
+
+        if (result.length > 0){
+            res.send(result)
+        }else{
+         res.send({message: "Wrong Email/password"});
+        }
+     }
+ );
+});
+
 
 app.listen(3002, ()=>{
     console.log("hi,Server is running on port 3002");
