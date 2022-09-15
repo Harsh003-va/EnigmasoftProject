@@ -31,7 +31,7 @@ db.query('INSERT INTO signup(name ,email, password) VALUES (?,?,?) ',[name, emai
 )
 });
 
-app.post('/login',(req, res) => {
+app.get('/login',(req, res) => {
     console.log(req.body);
 
     const email = req.body.email;

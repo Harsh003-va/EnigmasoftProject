@@ -35,7 +35,7 @@ const SignUp = () => {
     <div class="signup-box">
       <h1>Sign Up</h1>
       <h4>It's free and only takes a minute</h4>
-      <form>
+      <form action="post">
         <label>Name</label>
         <input
           type="text" onChange={(event) => {setName(event.target.value);}}
