@@ -1,33 +1,36 @@
-const express = require("express");
-const mysql = require("mysql");
-const cors = require("cors");
+const express= require('express');
+const app = express()
+const mysql=require('mysql');
+const cors = require('cors');
 
-const app = express();
-
+app.use(cors());
 app.use(express.json());
 
 const db = mysql.createConnection({
-  user: "root",
-  host: "localhost",
-  password: "sriraj9213",
-  database: "cafe",
-});
+user:'root',
+host:'localhost',
+password:'harsh',
+database:'cafe'
 
-app.post('/SignUp', (req, res)=> {
+})
+app.post('/create', (req, res) => {
+    console.log(req.body);
+   const name = req.body.name;
+   const email = req.body.email;
+   const password = req.body.password;
+   
 
-  const name = req.body.name;
-  const email = req.body.email;
-  const password = req.body.password;
-
-  db.query(
-    "INSERT INTO sign_up (Name, Email, Password) VALUES (?,?)",
-    [Name, Email, Password]
-    (err, result) => {
-      console.log(err);
+db.query('INSERT INTO signup(name ,email, password) VALUES (?,?,?) ',[name, email, password], (err, result) => {
+    if(err){
+        console.log(err)
+    }else{
+        res.send("Values Inserted");
     }
-  );
+}
+)
 });
 
-app.listen(3001, () => {
-  console.log("running sever");
+
+app.listen(3001, ()=>{
+    console.log("hi,Server is running on port 3001");
 });

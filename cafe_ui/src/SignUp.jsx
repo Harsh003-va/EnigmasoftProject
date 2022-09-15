@@ -9,13 +9,16 @@ const SignUp = () => {
   
   const SignUp = () => {
     console.log(name);
-    Axios.post('http://localhost3000/Signup', {
+    Axios.post('http://localhost3001/Signup', {
       name: name,
       email: email,
       password: password,
     }).then(() => {
       console.log("success");
     });
+  };
+  const displayInfo=() =>{
+    console.log(username + email + phone + password);
   };
 
   return (
