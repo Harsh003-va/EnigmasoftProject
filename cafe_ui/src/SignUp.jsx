@@ -38,15 +38,15 @@ const SignUp = () => {
       <form>
         <label>Name</label>
         <input
-          type="text" onChange={(event) => {setName(event.target.value);}}
+          type="text" onChange={(event) => {setName(event.target.value);}} required
         />
         <label>Email</label>
         <input 
-          type="email" onChange={(event) => {setEmail(event.target.value);}}
+          type="email" onChange={(event) => {setEmail(event.target.value);}} required
         />
         <label>Password</label>
         <input
-          type="password" onChange={(event) => {setPassword(event.target.value);}}
+          type="password" onChange={(event) => {setPassword(event.target.value);}}required
         />
         <button onClick={SignUp}> Submit </button>
       </form>

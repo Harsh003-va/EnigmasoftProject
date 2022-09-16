@@ -1,9 +1,7 @@
-
 import React, { useState } from "react";
 import Axios from 'axios';
-
 import "./Form.css";
-import "./App.css"
+
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -28,10 +26,10 @@ const Login = () => {
       <a href="/Home" class="formbar"><i class="fas fa-mug-hot">Enjoy By having Our Delicious Coffee</i> </a>
       <form>
         <label>Email</label>
-        <input type="email" placeholder="" onChange={(event) => {setEmail(event.target.value);}} />
+        <input type="email" placeholder="" onChange={(event) => {setEmail(event.target.value);}} required/>
         <label>Password</label>
-        <input type="password" placeholder="" onChange={(event) => {setPassword(event.target.value);}} />
-        <button onClick={Login} > Submit </button>
+        <input type="password" placeholder="" onChange={(event) => {setPassword(event.target.value);}} required/>
+        <button onClick={ Login  } > Submit </button>
         <p class="para-2">
       Not have an account? <a href="/SignUp">Sign Up Here</a>
     </p>
