@@ -24,7 +24,7 @@ const Login = () => {
 
     <div class="login-box"><br></br><br></br>
       <a href="/Home" class="formbar"><i class="fas fa-mug-hot">Enjoy By having Our Delicious Coffee</i> </a>
-      <form>
+      <form action="get">
         <label>Email</label>
         <input type="email" placeholder="" onChange={(event) => {setEmail(event.target.value);}} required/>
         <label>Password</label>
