@@ -8,7 +8,7 @@ const Navbar = () => {
           <section class="flex">
             <a href="/" class="logo"><i class="fas fa-mug-hot"> Cafe Capricon</i> </a>
             <nav class="navbar">
-              <a href="/Home">Home</a>
+              <a href="/">Home</a>
               <a href="/Menu">Menu</a>
               <a href="/Login">Login</a>
               <a href="#login-page" class="button">Book A Table</a>
