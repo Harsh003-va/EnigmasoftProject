@@ -48,6 +48,7 @@ const SignUp = () => {
         <input
           type="password" onChange={(event) => {setPassword(event.target.value);}}required
         />
+        <error id="alert-caps"></error>
         <button onClick={SignUp}> Submit </button>
       </form>
       <p class="para-2">
@@ -59,7 +60,7 @@ const SignUp = () => {
 
     
    
-  </body>
+  </body> 
 </html>
 
 
