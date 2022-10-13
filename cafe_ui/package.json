@@ -10,9 +10,12 @@
     "bootstrap": "^5.2.1",
     "cors": "^2.8.5",
     "express": "^4.18.1",
+    "rc-time-picker": "^3.7.3",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-datepicker": "^4.8.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.0",
+    "react-router-dom": "^6.4.1",
     "react-scripts": "^5.0.1",
     "reactstrap": "^9.1.4",
     "web-vitals": "^2.1.4"

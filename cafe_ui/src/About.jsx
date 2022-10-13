@@ -5,13 +5,9 @@ const About = () => {
   return (
     <div>
       <section class="about" id="about">
-          <br></br>
-
-          <div class="image">
-            <br></br>
-            <img src="\images\home-img-1.png" alt=""></img> 
-          </div>
-         
+      <div class="image">
+             <img src="\images\home-img-1.png" alt="" />
+      </div>
           <div class="content">
             <h3>Why Choose Us?</h3>
             <h2 class="title">the best coffee maker in the town</h2>
@@ -34,7 +30,7 @@ const About = () => {
             </div>
             <br></br>
               <a href="#facility" class="btnn">Our Facitities</a>
-          </div>
+          </div><br></br>
        </section>
 
    

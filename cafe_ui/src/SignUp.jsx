@@ -1,74 +1,101 @@
-import React, { useState } from "react";
+import React, {useState} from 'react';
+import {Button, Card, Form, Row, Alert} from 'react-bootstrap';
 import Axios from 'axios';
-import "./Form.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './register.css'
+import { useNavigate } from 'react-router-dom';
 
+export default function Register() {
+    const [mail, setMail] = useState('');
+    const [pass, setPass] = useState('');
+    const [error, setError] = useState('');
+    const navigate = useNavigate();
 
-const SignUp = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("0");
-  
-  const SignUp = () => {
-    console.log(name + email + password);
-    Axios.post('http://localhost:3002/create', {
-      name: name,
-      email: email,
-      password: password,
-    }).then(() => {
-      console.log("success");
-    });
-  };
-
-
-  return (
-    <div>
-   
-<html lang="en">
-  <head>
-    <title>Sign Up Page</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"></link>
-  </head>
-  <body>
-    <div class="signup-box">
-      <h1>Sign Up</h1>
-      <h4>It's free and only takes a minute</h4>
-      <form action="post">
-        <label>Name</label>
-        <input
-          type="text" onChange={(event) => {setName(event.target.value);}} required
-        />
-        <label>Email</label>
-        <input 
-          type="email" onChange={(event) => {setEmail(event.target.value);}} required
-        />
-        <label>Password</label>
-        <input
-          type="password" onChange={(event) => {setPassword(event.target.value);}}required
-        />
-        <error id="alert-caps"></error>
-        <button onClick={SignUp}> Submit </button>
-      </form>
-      <p class="para-2">
-        Already have an account? <a href="/Login">Login here</a>
-      </p>
-      <br></br>
-    </div>
-
-
+    Axios.defaults.withCredentials = true;
     
-   
-  </body> 
-</html>
-
-
-
-
-
+    const onSubmit = () => {
+        Axios.post('http://localhost:9003/register', {
+            mail: mail,
+            pass: pass
+        }).then((response) => {
+            if (response.data.message === 'success'){
+                
+                setError(response.data.message);
+                navigate('/Login');
+                   
+            }
+            else {
+                setError(response.data.message);
+            }
+        });
+    };
+    return(
+        <div className='bg'>
+            <Card id='cont'>
+                <Card.Body>
+                    {(error !== '') &&
+                        <Alert variant = 'danger'>{error}</Alert>
+                        
+                    }
+                    <Form>
+                        <Row className = 'm-3'>
+                            <Form.Group>
+                              <h1>Sign Up</h1>
+                              <h4>It's free and only takes a minute</h4>
+                                <Form.Label>Enter Email Address: </Form.Label>
+                                <Form.Control
+                                    type = 'email'
+                                    name = 'email'
+                                    placeholder = 'Email address' 
+                                    value = {mail}
+                                    onChange = {(e) => setMail(e.target.value)}
+                                    required = {true}
+                                />
+                            </Form.Group>
+                        </Row>
+                        <Row className = 'm-3'>
+                            <Form.Group>
+                                <Form.Label>Enter password: </Form.Label>
+                                <Form.Control
+                                    type = 'password'
+                                    name = 'password'
+                                    placeholder = 'Password' 
+                                    value = {pass}
+                                    onChange = {(e) => setPass(e.target.value)}
+                                    required
+                                />
+                            </Form.Group>
+                        </Row>
+                        <Row className="m-3">
+                            <Form.Group>
+                                <Form.Label>Repeat password: </Form.Label>
+                                <Form.Control
+                                    type = 'password'
+                                    placeholder = 'Repeat password' 
+                                    onChange = {(e) => {
+                                        if(pass !== e.target.value){
+                                            setError('Passwords do no not match');
+                                        }
+                                        else {
+                                            setError('');
+                                        }
+                                        
+                                        
+                                    }}
+                                />
+                            </Form.Group>
+                        </Row>
+                        
+                        
+                        <Button
+                            className = 'register-button' id='btnn'
+                            onClick = {onSubmit}
+                        >
+                            Register
+                        </Button>
+                    </Form>
+                </Card.Body>
+            </Card>
     </div>
-  )
+    )
 }
-
-export default SignUp

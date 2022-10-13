@@ -96,14 +96,6 @@
       text-decoration: underline;
       color:var(--main-color);
    }
-   
-   #menu-btn{
-      display: none;
-      font-size: 2.5rem;
-      color:var(--black);
-      cursor: pointer;
-   }
-  
    .button{
       color:white;
       display: inline-block;
@@ -200,12 +192,13 @@
   }
   
  body .home-bg{
-    min-height: 100vh;
+    min-height: 70vh;
     
   }
   
   .home-bg{
-      background:linear-gradient(80deg, var(--black), transparent 60%), url(./HOME.jpg) no-repeat;
+
+      background:linear-gradient(90deg, var(--black), transparent 60%), url(./HOME.jpg) no-repeat;
       background-size:cover;
       display: block;
       background-position: center;
@@ -252,11 +245,15 @@
    
    .about .image{
       flex:1 1 50rem;
-      padding-left: 10rem;
+      margin-right: 20rem;
+      padding-left: 15rem;
+      margin: 0;
+      left: 0;
+      
    }
    
    .about .image img{
-      width: 80%;
+      width: 95%;
       height:60rem;
       animation: float 4s linear infinite;
   }
@@ -290,7 +287,8 @@
       padding:1rem 0;
       line-height: 2;
       color:var(--light-color);
-      font-size: 1.5rem;
+      font-size: 1.6rem;
+      text-align: left;
    }
    .heading{
       margin-top: 5rem;
@@ -564,7 +562,12 @@
    color:var(--black);
    cursor: pointer;
  }
-
+.mobile-menu-icon{
+   border: none;
+   background: none;
+   font-size: 20px;
+   display: none;
+ }
 
    .footer{
       margin-top: auto;
@@ -572,6 +575,12 @@
       width: 100%;
       background:var(--black);
       text-align: center;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 500;
       
   }
   

@@ -1,0 +1,142 @@
+
+form label {
+    text-align: left;
+  }
+  #btn{
+    
+    
+    font-size: 18px;
+    justify-content: center;
+    width: 345px;
+    height: 35px;
+    margin-top: 15px;
+    border:#0a0a09 2rem;
+    background-color: #76492b;
+    color: white;
+    cursor: pointer;
+    border-radius: 1rem;
+    margin-left: 1px;
+ 
+ }
+
+ #btn:hover{
+    background:#af661e;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+  
+ }
+  .m-3 .formbar{
+  padding: 15px;
+  justify-content: center;
+  
+  
+ }
+ #container{
+  justify-content: center;
+  border: 2rem;
+  border-radius: 1rem;
+  box-shadow: 2px 1px 1px 2px black;
+  background-color: white;
+  text-align: center;
+  width: 450px;
+  height: 390px;
+
+ }
+ .Card.Body form{
+  margin-left: 80rem;
+ }
+ .m-5{
+  justify-content: center; 
+   padding-right: 40rem;
+ 
+
+ }
+  .card-container {
+    justify-content: center; 
+    width: 50rem;
+    margin-left: 130px;
+    margin-bottom: 100px;
+    padding:5px;
+  }
+  input.form-control{
+    
+    font-size: 15px;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1.5rem;
+  }
+  .form-control{
+    position: relative;
+    width: 100%;
+    font-size: 30rem;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .form-label {
+    position: relative;
+    margin-right: 40px;
+    display: flex;
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .card-text{
+    font-size: 14px;
+    position: relative;
+    margin-top: 10px;
+  
+    padding-top: 5px;
+  }
+  .card-text a{
+    color: #76492b;
+  }
+  .alert {
+    width: 50% !important;
+    left: 25%;
+  }
+
+
+  .bgg{
+   
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient( 
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.5)
+  ),
+  url("./cof.jpg")
+    center;
+  background-size: cover ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+   }
+
+
+    /* media query */
+ @media (max-width:768px){
+    
+  #container{
+    justify-content: center;
+    width: 350px;
+    height: 390px;
+    margin-left: 320px;
+
+  }
+  #btn{
+
+    justify-content: center;
+    width: 250px;
+    
+  }
+  input.form-control{
+    
+    font-size: 15px;
+  }
+ }
